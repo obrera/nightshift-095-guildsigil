@@ -6,7 +6,7 @@ import {
 } from '@solana-mobile/wallet-standard-mobile'
 import { type SolanaCluster } from '@wallet-ui/react'
 
-export function solanaMobileWalletAdapter({
+export function solanaMobileWalletStandard({
   appIdentity = { name: 'Wallet UI' },
   clusters,
 }: {
@@ -17,12 +17,12 @@ export function solanaMobileWalletAdapter({
     return
   }
   if (!window.isSecureContext) {
-    console.warn(`Solana Mobile Wallet Adapter not loaded: https connection required`)
+    console.warn(`Solana Mobile Wallet Standard not loaded: https connection required`)
     return
   }
   const chains = clusters.map((c) => c.id)
   if (!chains.length) {
-    console.warn(`Solana Mobile Wallet Adapter not loaded: no clusters provided`)
+    console.warn(`Solana Mobile Wallet Standard not loaded: no clusters provided`)
     return
   }
   registerMwa({
@@ -32,5 +32,5 @@ export function solanaMobileWalletAdapter({
     chainSelector: createDefaultChainSelector(),
     onWalletNotFound: createDefaultWalletNotFoundHandler(),
   })
-  console.log(`Loaded Solana Mobile Wallet Adapter`)
+  console.log(`Loaded Solana Mobile Wallet Standard`)
 }

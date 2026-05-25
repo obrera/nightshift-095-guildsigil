@@ -7,7 +7,7 @@ import {
 } from '@wallet-ui/react'
 import { type ReactNode, useEffect } from 'react'
 
-import { solanaMobileWalletAdapter } from './solana-mobile-wallet-adapter'
+import { solanaMobileWalletStandard } from './solana-mobile-wallet-standard'
 
 const config = createWalletUiConfig({
   clusters: [
@@ -17,16 +17,16 @@ const config = createWalletUiConfig({
   ],
 })
 
-let solanaMobileWalletAdapterLoaded = false
+let solanaMobileWalletStandardLoaded = false
 
 export function SolanaProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
-    if (solanaMobileWalletAdapterLoaded) {
+    if (solanaMobileWalletStandardLoaded) {
       return
     }
 
-    solanaMobileWalletAdapterLoaded = true
-    solanaMobileWalletAdapter({ clusters: config.clusters })
+    solanaMobileWalletStandardLoaded = true
+    solanaMobileWalletStandard({ clusters: config.clusters })
   }, [])
 
   return <WalletUi config={config}>{children}</WalletUi>
