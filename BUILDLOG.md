@@ -43,6 +43,7 @@
 | 01:13 | Ran `bun run build`, `bun run check-types`, and `bun run lint`; fixed lint formatting and Solana proof script wait logic. |
 | 01:14 | Verified local Hono server routes on port 3095: `/health`, `/api/health`, metadata JSON, SVG media, and frontend. |
 | 01:16 | Ran local proof mint against local metadata/media routes with Alice devnet signer. |
+| 01:19 | First Dokploy deploy failed because Docker `bun install` ran the generated `lefthook install` prepare script without `git` in the Bun image. |
 
 ## Validation Evidence
 
