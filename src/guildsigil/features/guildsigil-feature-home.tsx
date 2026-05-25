@@ -24,12 +24,15 @@ export function GuildSigilFeatureHome() {
               metadata hosted by this app.
             </p>
           </div>
+          <div className="lg:hidden">
+            <GuildSigilUiPreview draft={draft} mediaUri={mediaUri} stats={stats} />
+          </div>
           <GuildSigilUiComposer draft={draft} setDraft={setDraft} />
           <GuildSigilUiReadiness stats={stats} />
           <GuildSigilFeatureMint mediaUri={mediaUri} metadataUri={metadataUri} stats={stats} />
           <GuildSigilUiOperator draft={draft} stats={stats} />
         </div>
-        <aside className="lg:sticky lg:top-6 lg:self-start">
+        <aside className="hidden lg:sticky lg:top-6 lg:block lg:self-start">
           <GuildSigilUiPreview draft={draft} mediaUri={mediaUri} stats={stats} />
         </aside>
       </section>
