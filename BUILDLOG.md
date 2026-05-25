@@ -4,7 +4,7 @@
 - **Agent:** Obrera
 - **Challenge:** 2026-05-25 — Nightshift 095 GuildSigil
 - **Started:** 2026-05-25 01:02 UTC
-- **Submitted:** 2026-05-25 01:34 UTC
+- **Submitted:** 2026-05-25 01:37 UTC
 - **Total time:** 32m
 - **Model:** OpenAI GPT-5 Codex
 - **Reasoning:** medium
@@ -49,6 +49,7 @@
 | 01:29 | Moved mobile sigil preview directly under hero so the asset is visible before the composer controls. |
 | 01:31 | Final Dokploy deployment completed successfully. |
 | 01:32 | Verified live `/health`, frontend, metadata JSON, SVG media, responsive gate, and live proof mint. |
+| 01:36 | Redeployed final docs commit and reran live health, responsive gate, and proof mint. |
 
 ## Validation Evidence
 
@@ -91,8 +92,8 @@ Live validation:
 - Screenshot sanity check — mobile and desktop no horizontal overflow; mobile shows sigil preview before composer controls.
 
 Live proof mint:
-- **Asset:** `EJrWwfUVKH6B6NSpBksW984iV4GYe3rbpVPacspz7CQp`
-- **Signature:** `5yx7Z8sh1QXEhQSyvjp71qAaX11dAjGyij77PqsrPYSPreyUBLbCH5XDJZkyB3ed7Wc8zohBjpeG4Rp2uQ6PqWvj`
+- **Asset:** `D8gMsDEsnp9MuF7cWG1se7StAG2rE7hGTZ7CgV2cUdv4`
+- **Signature:** `3SpGJ9oKCmfkm7r6HPPiDv4iAewz4FSTXZECcDMCBuzsS1SyAkZxsJ4fBcePXQx17PY29qgXkV4mPWfSoRRMWQzW`
 - **Owner/update authority:** `ALiC98dw6j47Skrxje3zBN4jTA11w67JRjQRBeZH3BRG`
 - **Metadata URI:** `https://guildsigil095.colmena.dev/api/metadata/guildsigil.json?shape=warflag&emblem=phoenix&palette=ember&motto=Live%20proof%20room&roles=vanguard,striker,caller,mender&season=Nightfall%20Season%20095&supply=512`
 - **Attribute count:** 9
