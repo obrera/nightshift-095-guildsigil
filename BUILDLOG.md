@@ -45,6 +45,7 @@
 | 01:16 | Ran local proof mint against local metadata/media routes with Alice devnet signer. |
 | 01:19 | First Dokploy deploy failed because Docker `bun install` ran the generated `lefthook install` prepare script without `git` in the Bun image. |
 | 01:23 | Second Dokploy deploy built the image but failed on host port `3095`; removed compose host-port publishing for Dokploy internal routing. |
+| 01:27 | Screenshot sanity check found SVG preview sizing/text overlap; fixed preview SVG sizing and moved generated text below emblem. |
 
 ## Validation Evidence
 

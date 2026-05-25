@@ -14,7 +14,7 @@ export function GuildSigilUiPreview({
   return (
     <section className="grid gap-4">
       <div
-        className="aspect-[16/19] overflow-hidden rounded-lg border border-white/10 bg-black shadow-2xl shadow-black/40"
+        className="aspect-[16/19] overflow-hidden rounded-lg border border-white/10 bg-black shadow-2xl shadow-black/40 [&_svg]:h-full [&_svg]:w-full"
         dangerouslySetInnerHTML={{ __html: renderGuildSigilSvg(draft) }}
       />
       <div className="grid grid-cols-3 gap-2 text-center">

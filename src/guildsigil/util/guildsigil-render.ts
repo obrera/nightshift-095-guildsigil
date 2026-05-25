@@ -39,7 +39,7 @@ export function renderGuildSigilSvg(draftInput: GuildSigilDraft) {
   const roles = draft.roles
     .map(
       (role, index) =>
-        `<circle cx="${164 + index * 42}" cy="412" r="13" fill="${palette.glow}"><title>${escapeXml(role)}</title></circle>`,
+        `<circle cx="${164 + index * 42}" cy="558" r="13" fill="${palette.glow}"><title>${escapeXml(role)}</title></circle>`,
     )
     .join('')
 
@@ -58,10 +58,10 @@ export function renderGuildSigilSvg(draftInput: GuildSigilDraft) {
   <path d="${path}" fill="none" stroke="${palette.glow}" stroke-width="2" opacity="0.75"/>
   <line x1="114" x2="526" y1="94" y2="94" stroke="${palette.trim}" stroke-width="12" stroke-linecap="round"/>
   <g filter="url(#glow)">${emblem}</g>
-  <text x="320" y="352" fill="${palette.trim}" font-family="Verdana, sans-serif" font-size="30" text-anchor="middle" font-weight="700">${escapeXml(stats.accessTier)}</text>
-  <text x="320" y="388" fill="#f8fafc" font-family="Verdana, sans-serif" font-size="22" text-anchor="middle">${escapeXml(draft.motto)}</text>
+  <text x="320" y="486" fill="${palette.trim}" font-family="Verdana, sans-serif" font-size="30" text-anchor="middle" font-weight="700">${escapeXml(stats.accessTier)}</text>
+  <text x="320" y="524" fill="#f8fafc" font-family="Verdana, sans-serif" font-size="22" text-anchor="middle">${escapeXml(draft.motto)}</text>
   <g>${roles}</g>
-  <text x="320" y="462" fill="${palette.trim}" font-family="Verdana, sans-serif" font-size="18" text-anchor="middle">Readiness ${stats.readiness} / Raid +${stats.raidBonus}</text>
+  <text x="320" y="600" fill="${palette.trim}" font-family="Verdana, sans-serif" font-size="18" text-anchor="middle">Readiness ${stats.readiness} / Raid +${stats.raidBonus}</text>
   <text x="320" y="704" fill="#b9c4d0" font-family="Verdana, sans-serif" font-size="18" text-anchor="middle">${escapeXml(draft.season)} · GuildSigil 095</text>
 </svg>`
 }
